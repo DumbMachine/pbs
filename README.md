@@ -101,34 +101,37 @@ These keys will be configurable in a future release.
 
 ## TODO:
 
-- [ ] Installation artifacts. The extension should be on the ff/chrome store soon.
-- [ ] Test if the extension works on chrome.
-- [ ] History searching is trash. This will be fixed, when I next get time to work.
-- [ ] CSP blocking. Code exists, just needs some furnishing
-- [ ] Caret browsing: like hints but for setting the starting point of a selection
+- [ ] Caret browsing: like hints but for setting the starting point of a text selection
+- [ ] Installation artifacts. The extension should be on the ff store soon.
+- [ ] Test if the extension works on chrome. I don't use chrome, so I dropped the test. Unless someone raises an issue, it'll remain a todo.
 
-## Installation:
+<!-- ## Installation:
 
 - Firefox 🦊:
-- Others: being a FF user, it's what I've used the most. Haven't tested much on chromium-based browsers.
+- Others: being a FF user, it's what I've used the most. Haven't tested much on chromium-based browsers. -->
 
 ### Install from Source
 
-`npm run build:ff` to build the app.
+<!-- `npm run build:ff` to build the app. -->
+
+`npm run build` to build the app.
 On FF:
 
 1. Open Firefox
 2. Enter "about:debugging" in the URL bar
 3. Click "Load Temporary Add-on"
-4. Open the Vimium directory you've cloned from Github, and select any file inside.
+4. Open `manifest.json` from the `./dist` folder, from where the build was start.
 
 On Chrome:
-`npm run build:chrome` to build the app.
+
+<!-- `npm run build:chrome` to build the app. -->
+
+`npm run build` to build the app.
 
 1. Navigate to chrome://extensions
 2. Toggle into Developer Mode
 3. Click on "Load Unpacked Extension..."
-4. Select the Vimium directory you've cloned from Github.
+4. Open `manifest.json` from the `./dist` folder, from where the build was start.
 
 ## Security Concerns
 
