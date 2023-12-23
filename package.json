@@ -1,0 +1,56 @@
+{
+  "name": "vite-web-extension",
+  "displayName": "Predictable Browser Shortcuts",
+  "version": "0.1.0",
+  "description": "A browser extension that add hints to ui elements, can are not _random_.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dumbmachine/pbs.git"
+  },
+  "scripts": {
+    "build": "vite build",
+    "dev": "nodemon",
+    "dev-ff": "nodemon --exec \"vite build --mode development --force\" --watch src --watch vite.config.ts",
+    "dev-chrome": "nodemon --exec \"vite build --mode development --force\" --watch src --watch vite.config.ts --watch manifest.json"
+  },
+  "type": "module",
+  "dependencies": {
+    "@headlessui/react": "^1.7.17",
+    "@heroicons/react": "^2.0.18",
+    "@leeoniya/ufuzzy": "^1.0.11",
+    "clsx": "^2.0.0",
+    "css-selector-generator": "^3.6.6",
+    "dompurify": "^3.0.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "use-debounce": "^10.0.0",
+    "vite-plugin-css-injected-by-js": "^3.1.1",
+    "webextension-polyfill": "^0.10.0"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.237",
+    "@types/node": "^18.11.18",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@types/webextension-polyfill": "^0.10.0",
+    "@typescript-eslint/eslint-plugin": "^5.49.0",
+    "@typescript-eslint/parser": "^5.49.0",
+    "@vitejs/plugin-react-swc": "^3.0.1",
+    "autoprefixer": "^10.4.13",
+    "eslint": "^8.32.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-react": "^7.32.1",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "fs-extra": "^11.1.0",
+    "nodemon": "^2.0.20",
+    "postcss": "^8.4.21",
+    "rollup-plugin-typescript": "^1.0.1",
+    "tailwindcss": "^3.2.4",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4",
+    "vite": "^4.0.4"
+  }
+}
